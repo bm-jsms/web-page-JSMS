@@ -1,0 +1,20 @@
+{
+	"navigation": {
+		"home": "Inicio",
+		"about": "Acerca",
+		"work": "Trabajo",
+		"blog": "Blog",
+		"shop": "Tienda",
+		"contact": "Contacto"
+	},
+	"page": {
+		"home": {
+			"title": "Bienvenido a  NextJs i18n",
+			"description": "Internationalization in NextJs 13 App router"
+		},
+		"about": {
+			"title": "Acerca de nostrotros",
+			"description": "Este es la seccion about de la pagina"
+		}
+	}
+}
