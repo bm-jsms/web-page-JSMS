@@ -9,12 +9,30 @@
 	},
 	"page": {
 		"home": {
-			"title": "Bienvenido a  NextJs i18n",
-			"description": "Internationalization in NextJs 13 App router"
+			"title": "Unete a la comunidad tecnologica mas Importante",
+			"description": "Deja de ver el cambio y se parte del futuro de la tecnologia. Disfruta del camino y del aprendizaje con nosotros",
+			"button": "Unete a la comunidad",
+			"button2": "Ver mas !!"
 		},
 		"about": {
 			"title": "Acerca de nostrotros",
 			"description": "Este es la seccion about de la pagina"
+		},
+		"work": {
+			"title": "Nuestro trabajo",
+			"description": "Este es la seccion work de la pagina"
+		},
+		"blog": {
+			"title": "Nuestro blog",
+			"description": "Este es la seccion blog de la pagina"
+		},
+		"shop": {
+			"title": "Nuestra tienda",
+			"description": "Este es la seccion shop de la pagina"
+		},
+		"contact": {
+			"title": "Contactanos",
+			"description": "Este es la seccion contact de la pagina"
 		}
 	}
 }

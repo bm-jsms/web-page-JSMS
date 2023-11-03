@@ -1,7 +1,15 @@
-import React from 'react';
+import { Locale } from '@/i18n.config';
+import { getDictionary } from '@/lib/dictionary';
 
-const page = () => {
-	return <div>page</div>;
+const Shop = async ({ params: { lang } }: { params: { lang: Locale } }) => {
+	const { page } = await getDictionary(lang);
+
+	return (
+		<div>
+			<h2>{page.shop.title}</h2>
+			<p>{page.shop.description}</p>
+		</div>
+	);
 };
 
-export default page;
+export default Shop;

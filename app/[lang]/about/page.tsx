@@ -1,12 +1,11 @@
-'use cleint';
 import { MotionAbout } from '@/components/motionAbout';
-import { locale } from '@/i18n.config';
+import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
 
 export default async function About({
 	params: { lang },
 }: {
-	params: { lang: locale };
+	params: { lang: Locale };
 }) {
 	const { page } = await getDictionary(lang);
 

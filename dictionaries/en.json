@@ -9,12 +9,30 @@
 	},
 	"page": {
 		"home": {
-			"title": "Welcome to NextJs i18n",
-			"description": "Internationalization in NextJs 13 App router"
+			"title": "Join the most important technology community",
+			"description": "Stop seeing the change and be part of the future of technology. Enjoy the journey and learning with us",
+			"button": "Join Now",
+			"button2": "Learn More!!"
 		},
 		"about": {
 			"title": "About Us",
 			"description": "This is the about page"
+		},
+		"work": {
+			"title": "Work",
+			"description": "This is the work page"
+		},
+		"blog": {
+			"title": "Blog",
+			"description": "This is the blog page"
+		},
+		"shop": {
+			"title": "Shop",
+			"description": "This is the shop page"
+		},
+		"contact": {
+			"title": "Contact",
+			"description": "This is the contact page"
 		}
 	}
 }
