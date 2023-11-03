@@ -10,7 +10,7 @@ export default async function Header({ lang }: { lang: locale }) {
 	const { navigation } = await getDictionary(lang);
 
 	return (
-		<header className='py-2 bg-blue-200 dark:bg-gray-800 px-6 md:px-24 w-screen'>
+		<header className='py-2 bg-white dark:bg-[#191718] px-6 md:px-24 w-full bg-opacity-70 dark:bg-opacity-50 border-2 border-black'>
 			<div className='flex flex-row justify-between container mx-auto'>
 				<div className='py-2 lg:flex max-lg:hidden'>
 					<Link href={`/${lang}`}>
@@ -19,14 +19,14 @@ export default async function Header({ lang }: { lang: locale }) {
 					{/* <span className='text-3xl font-extrabold'>Logo</span> */}
 				</div>
 				<div className='relative group max-lg:flex lg:hidden'>
-					<div className='flex items-center gap-1'>
+					<div className='flex items-center gap-1 absolute'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							viewBox='0 0 24 24'
 							strokeWidth={1.5}
 							stroke='currentColor'
-							className='w-12 p-2 border-2 border-gray-800 rounded-lg text-black dark:text-gray-200 dark:border-gray-200 group relative dark:hover:bg-black duration-150 hover:bg-black hover:text-white cursor-pointer'
+							className='w-12 p-2 border-2 bg-slate-800 text-white border-gray-800 rounded-lg  dark:text-gray-200 dark:border-gray-200 group relative dark:hover:bg-black duration-150 hover:bg-black hover:text-white cursor-pointer'
 						>
 							<path
 								strokeLinecap='round'
@@ -37,7 +37,7 @@ export default async function Header({ lang }: { lang: locale }) {
 						{/* <span className='text-lg font-semibold'>{navigation.menu}</span> */}
 					</div>
 
-					<ul className='absolute hidden space-y-5 group-hover:block w-screen bg-slate-200 p-4 rounded-xl dark:bg-black mt-16 -ml-32 items-center text-center text-xl'>
+					<ul className='absolute hidden space-y-5 group-hover:block w-screen bg-slate-200 p-4 rounded-xl dark:bg-black mt-16 -ml-32 items-center text-center text-xl z-10'>
 						<li>
 							<Link href={`/${lang}`}>{navigation.home}</Link>
 						</li>
@@ -59,11 +59,11 @@ export default async function Header({ lang }: { lang: locale }) {
 					</ul>
 				</div>
 				<nav className='items-center justify-between hidden lg:flex'>
-					<ul className='flex gap-x-8 font-semibold'>
+					<ul className='flex gap-x-8 font-semibold text-black dark:text-slate-100 '>
 						<li>
 							<Link
 								href={`/${lang}`}
-								className='hover:scale-105 duration-150 hover:border-b-4 border-blue-600 pb-2 hover:text-blue-600'
+								className='hover:border-b-4 pb-2 hover:border-2 border-black px-2 py-2 rounded-xl hover:bg-black hover:text-white duration-150'
 							>
 								{navigation.home}
 							</Link>
@@ -71,7 +71,7 @@ export default async function Header({ lang }: { lang: locale }) {
 						<li>
 							<Link
 								href={`/${lang}/about`}
-								className='hover:scale-105 duration-150 hover:border-b-4 border-blue-600 pb-2 hover:text-blue-600'
+								className='hover:border-b-4 pb-2 hover:border-2 border-black px-2 py-2 rounded-xl hover:bg-black hover:text-white duration-150'
 							>
 								{navigation.about}
 							</Link>
@@ -79,7 +79,7 @@ export default async function Header({ lang }: { lang: locale }) {
 						<li>
 							<Link
 								href={`/${lang}/work`}
-								className='hover:scale-105 duration-150 hover:border-b-4 border-blue-600 pb-2 hover:text-blue-600'
+								className='hover:border-b-4 pb-2 hover:border-2 border-black px-2 py-2 rounded-xl hover:bg-black hover:text-white duration-150'
 							>
 								{navigation.work}
 							</Link>
@@ -87,7 +87,7 @@ export default async function Header({ lang }: { lang: locale }) {
 						<li>
 							<Link
 								href={`/${lang}/blog`}
-								className='hover:scale-105 duration-150 hover:border-b-4 border-blue-600 pb-2 hover:text-blue-600'
+								className='hover:border-b-4 pb-2 hover:border-2 border-black px-2 py-2 rounded-xl hover:bg-black hover:text-white duration-150'
 							>
 								{navigation.blog}
 							</Link>
@@ -95,7 +95,7 @@ export default async function Header({ lang }: { lang: locale }) {
 						<li>
 							<Link
 								href={`/${lang}/shop`}
-								className='hover:scale-105 duration-150 hover:border-b-4 border-blue-600 pb-2 hover:text-blue-600'
+								className='hover:border-b-4 pb-2 hover:border-2 border-black px-2 py-2 rounded-xl hover:bg-black hover:text-white duration-150'
 							>
 								{navigation.shop}
 							</Link>
@@ -103,7 +103,7 @@ export default async function Header({ lang }: { lang: locale }) {
 						<li>
 							<Link
 								href={`/${lang}/contact`}
-								className='hover:scale-105 duration-150 hover:border-b-4 border-blue-600 pb-2 hover:text-blue-600'
+								className='hover:border-b-4 pb-2 hover:border-2 border-black px-2 py-2 rounded-xl hover:bg-black hover:text-white duration-150'
 							>
 								{navigation.contact}
 							</Link>

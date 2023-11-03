@@ -17,7 +17,7 @@ export default function LocaleSwitcher() {
 		<ul className='flex gap-x-3'>
 			<div className='relative group'>
 				<div className='flex items-center gap-1'>
-					<p className='flex group bg-black p-2 rounded-lg cursor-pointer w-16 justify-between h-10 items-center'>
+					<p className='flex group bg-black dark:border-2 border-white p-2 rounded-lg cursor-pointer w-16 justify-between h-10 items-center'>
 						🌐
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -35,7 +35,7 @@ export default function LocaleSwitcher() {
 						</svg>
 					</p>
 				</div>
-				<ul className='absolute hidden space-y-5 group-hover:block bg-slate-900 p-4 rounded-xl dark:bg-slate-700'>
+				<ul className='absolute hidden space-y-5 group-hover:block bg-slate-900 p-4 rounded-xl dark:bg-slate-700 z-10'>
 					{i18n.locales.map(locale => {
 						return (
 							<li key={locale}>
