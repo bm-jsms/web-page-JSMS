@@ -7,6 +7,7 @@ import { RepeatR } from '@/motionComponents/RepeatReverse';
 import { MotionText } from '@/motionComponents/TextAnimate';
 import PrimaryB from '@/components/Buttons/PrimaryB';
 import SecondaryB from '@/components/Buttons/SecondaryB';
+import Link from 'next/link';
 
 export default async function Home({
 	params: { lang },
@@ -36,8 +37,12 @@ export default async function Home({
 								{page.home.description}
 							</p>
 							<div className='flex flex-row gap-5 justify-evenly'>
-								<PrimaryB text={page.home.button} />
-								<SecondaryB text={page.home.button2} />
+								<PrimaryB text={page.home.button} to={`/${lang}/contact`} />
+
+								<SecondaryB
+									text={page.home.button2}
+									to={`/${lang}/about`}
+								></SecondaryB>
 							</div>
 						</MotionText>
 					</div>

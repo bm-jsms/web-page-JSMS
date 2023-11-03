@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { locale } from '@/i18n.config';
+import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
 import LocaleSwitcher from './LocaleSwitcher';
 import SwitchTheme from './SwitchTheme';
 import Image from 'next/image';
 import logo from '@/public/logo.svg';
 
-export default async function Header({ lang }: { lang: locale }) {
+export default async function Header({ lang }: { lang: Locale }) {
 	const { navigation } = await getDictionary(lang);
 
 	return (
