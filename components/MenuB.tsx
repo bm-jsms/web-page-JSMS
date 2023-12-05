@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { Bars3Icon, Bars3BottomLeftIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import { getDictionary } from '@/lib/dictionary';
-import { locale } from '@/i18n.config';
+import { Locale } from '@/i18n.config';
 
-export default async function MenuB({ lang }: { lang: locale }) {
+export default async function MenuB({ lang }: { lang: Locale }) {
 	const { navigation } = await getDictionary(lang);
 	const [menu, setMenu] = useState(false);
 
