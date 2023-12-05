@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { locale, i18n } from '@/i18n.config';
+import { Locale, i18n } from '@/i18n.config';
 import Header from '@/components/Header';
 import { Providers } from './providers';
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 	params,
 }: {
 	children: React.ReactNode;
-	params: { lang: locale };
+	params: { lang: Locale };
 }) {
 	return (
 		<html lang={params.lang}>
