@@ -7,7 +7,6 @@ import { RepeatR } from '@/motionComponents/RepeatReverse';
 import { MotionText } from '@/motionComponents/TextAnimate';
 import PrimaryB from '@/components/Buttons/PrimaryB';
 import SecondaryB from '@/components/Buttons/SecondaryB';
-import Link from 'next/link';
 
 export default async function Home({
 	params: { lang },
